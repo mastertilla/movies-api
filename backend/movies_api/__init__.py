@@ -1,2 +1,2 @@
-def hello() -> str:
-    return "Hello from movies-api!"
+def hello(text) -> str:
+    return f"Hello {text} from movies-api!"
