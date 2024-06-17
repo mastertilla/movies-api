@@ -31,4 +31,4 @@ repos:
     rev: v1.1.367
     hooks:
       - id: pyright
-        args: [--outputjson, --useLibraryCodeForTypes]
+        args: [--project, backend/pyproject.toml]
