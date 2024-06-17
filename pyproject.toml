@@ -1,0 +1,27 @@
+[project]
+name = "movies-api"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "mastertilla", email = "danielmontillanavas@gmail.com" }
+]
+dependencies = [
+    "fastapi>=0.111.0",
+    "alembic>=1.13.1",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/movies_api"]
